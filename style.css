@@ -223,6 +223,8 @@ li a:hover {
     padding: 20px;
     width: 80%;
     max-width: 500px;
+    max-height: 800px;
+    overflow-y: scroll;
     border-radius: 10px;
 }
 .modal-content {
@@ -603,7 +605,7 @@ li a:hover {
         width: 160px;
 
     }
-    .open-menu , .close-menu{
+    .open-menu {
         display: block;
     }
     #check:checked ~ .menu {
@@ -1930,15 +1932,8 @@ li a:hover {
         display: flex;
         align-items: center;
     } 
-<<<<<<< HEAD
     .play__button {
         width: 16px;
-=======
-    .ri-play-large-fill:before {
-        position: relative;
-        top: 0;
-        right: 0;
->>>>>>> 6e4a70ae5b0429b5c365e8da325d8dad0a8d847c
     }
 }
 @media screen and (max-width: 319px) {
