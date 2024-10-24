@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drone project</title>
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./fontawesome/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul class="nav-bar" id="navMenu">
+                    <li class="logo">
+                        <img src="./images/logo.png" alt="logo" class="logo__width" width="100%">
+                    </li>
+                    <input type="checkbox" name="checkbox" id="check">
+                    <li class="menu__list"><a href="#" class="active">Home</a></li>
+                    <li class="menu__list"><a href="#">Course</a></li>
+                    <li class="menu__list"><a href="#">Activities</a></li>
+                    <li class="menu__list"><a href="#">Knowledge Sharing</a></li>
+                    <li class="menu__list"><a href="#">About Us</a></li>
+                    <li class="menu__list"><a href="#">Contact Us</a></li>
+                    <li class="menu__list"><a href="#">FAQ</a></li>
+                    <div class="button__group">
+                        <button class="login__button"><a href="#">LOGIN</a></button>
+                        <button class="signup__button"><a href="#">SIGN UP</a></button>
+                    </div>
+                    <!-- <label for="check" class="close-menu"><i class="ri-close-large-line"></i></label> -->
+                    <label for="check" class="open-menu"><i class="ri-menu-line"></i></label>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="ticker-wrapper">
+        <div class="text-update">
+            <p>มุ่นเน้นทักษะ (Skill) พัฒนาความรู้ (knowledge) มุ่งสู่มาตรฐาน (Standard) บริหารความเสี่ยง (Risk
+                Management) ลดเลี่ยงอุบัติเหตุ อุบัติการณ์ (Reduce Accident and Incident) สร้างรากฐานวิชาชีพ
+                “นักบินโดรน” (Drone Professional)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;มุ่นเน้นทักษะ (Skill) พัฒนาความรู้
+                (knowledge) มุ่งสู่มาตรฐาน (Standard) บริหารความเสี่ยง (Risk Management) ลดเลี่ยงอุบัติเหตุ อุบัติการณ์
+                (Reduce Accident and Incident) สร้างรากฐานวิชาชีพ “นักบินโดรน” (Drone Professional)</p>
+        </div>
+    </div>
+    <div>
+        <img src="./images/Main_banner.png" alt="main-banner" width="100%">
+    </div>
+    <div class="image__container">
+        <div class="background__image">
+            <img src="./images/banner_2.png" alt="banner_2" width="100%" class="banner__2__width__height">
+        </div>
+        <div class="text-overlay">บริษัท ซิสทรอนิกส์ จำกัด</div>
+        <div class="text-overlay-2">
+            บริษัท ซิสทรอนิกส์ จำกัด เราเชื่อมั่นในพลังแห่งการพัฒนาศักยภาพ
+            ความรู้ ทักษะความชำนาญ ไปสู่มิติแห่งวิชาชีพอากาศยานไร้คนขับ
+            ที่นับวันแต่จะเติบโตขึ้นขยายขอบข่ายการใช้งานอากาศยานไร้คนขับ
+            ไปยังธุรกิจที่หลากหลายขึ้นตั้งแต่ระดับพื้นฐานเพื่อเป้าหมาย
+            Recreation ไปจนถึงระดับมืออาชีพเฉพาะทาง ด้วยความมุ่งมั่นนี้
+            ซิสทรอนิกส์ ลงทุนศูนย์ฝึกอบรมวิชาชีพอากาศยานไร้คนขับด้วยเงินทุน
+            กว่า 40 ล้านบาท ทั้งสถานที่เพื่อใช้ในการฝึกปฏิบัติและพัฒนาระบบ
+            การอบรมออนไลน์เชื่อมโยงสนับสนุนกัน เพื่อสร้าง Solution
+            ให้แก่ผู้เข้ารับการอบรม ให้ได้ผลอย่างเหนือความคาดหมายมาร่วมเดินทาง
+            ไปสู่ความสำเร็จในอาชีพอากาศยานไร้คนขับ
+            สร้างประสบการณ์ใหม่สร้างอาชีพใหม่ ไปด้วยกันกับเรา
+        </div>
+        <span class="read-more-btn">อ่านเพิ่มเติม</span>
+        <button class="button__overlay" id="seeMoreDetailBtn">see more detail&nbsp;&nbsp;&nbsp;<img src="./images/play-button.png" alt="play-button" width="100%" class="play__button"></span></button>
+    </div>
+    <div id="readMoreModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal"><i class="ri-close-large-line"></i></span>
+            <p class="text-overlay-2-full">บริษัท ซิสทรอนิกส์ จำกัด เราเชื่อมั่นในพลังแห่งการพัฒนาศักยภาพ
+                ความรู้ ทักษะความชำนาญ ไปสู่มิติแห่งวิชาชีพอากาศยานไร้คนขับ
+                ที่นับวันแต่จะเติบโตขึ้นขยายขอบข่ายการใช้งานอากาศยานไร้คนขับ
+                ไปยังธุรกิจที่หลากหลายขึ้นตั้งแต่ระดับพื้นฐานเพื่อเป้าหมาย Recreation 
+                ไปจนถึงระดับมืออาชีพเฉพาะทาง ด้วยความมุ่งมั่นนี้ ซิสทรอนิกส์ ลงทุนศูนย์ฝึกอบรม 
+                วิชาชีพอากาศยานไร้คนขับด้วยเงินทุน กว่า 40 ล้านบาท ทั้งสถานที่เพื่อใช้ในการฝึกปฏิบัติ 
+                และพัฒนาระบบ การอบรมออนไลน์เชื่อมโยงสนับสนุนกัน เพื่อสร้าง Solution ให้แก่ผู้เข้ารับการอบรม 
+                ให้ได้ผลอย่างเหนือความคาดหมาย มาร่วมเดินทางไปสู่ความสำเร็จในอาชีพอากาศยานไร้คนขับ 
+                สร้างประสบการณ์ใหม่ สร้างอาชีพใหม่ ไปด้วยกันกับเรา</p>
+        </div>
+    </div>
+    <div id="videoModal" class="video-modal">
+        <div class="modal-content-2">
+            <video id="fullScreenVideo" controls controlsList="nodownload">
+                <source src="./videos/video.mp4" type="video/mp4">
+            </video>
+            <span class="close-modal-2"><i class="ri-close-large-line"></i></span>
+        </div>
+    </div>
+    <div class="image__container">
+        <div class="background__image__2">
+            <img src="./images/mask_group.png" alt="banner_2" width="100%" class="banner__2__width__height">
+        </div>
+        <div class="text-overlay-3">
+            เรียนแล้วได้อะไร
+        </div>
+        <div class="text-overlay-4">
+	        สำหรับผู้จบการฝึกอบรมในแต่ละหลักสูตรจะมีทักษะ (Skill) มีความสามารถ (Competency) มีความรู้ (Knowledge) ในระดับพื้นฐาน (Basic) จนถึงระดับสูง (Advance) สามารถทำการบินได้อย่างปลอดภัย (Aviation Safety) มีเข้าใจระบบการบินอากาศยานไร้คนขับในแบบต่างๆ ทั้งแบบปีกหมุน (Multi Rotor) และแบบปีกตรึง (Fixed Wing) สามารถปฏิบัติการบินได้ถูกต้องตามกฎหมาย พระราชบัญญัติการเดินอากาศ พ.ศ.2497 และประกาศกฎเกณฑ์ต่างๆ ที่เกี่ยวข้อง 
+            นอกจากนี้ ผู้จบในแต่ละหลักสูตรสามารถต่อยอดธุรกิจ สร้างมูลค่างาน พัฒนาวิชาชีพ สู่การประกอบอาชีพนักบินโดรนงานด้านต่างๆ อาทิ การเป็นนักบินโดรนภารกิจกู้ภัย ค้นหา นักบินโดรนเพื่อการสำรวจและรังวัด นักบินโดรนจัดทำแผนที่ทางอากาศ 2 มิติ 3 มิติ นักบินโดรนงานตรวจสอบ รวมถึง นักบินโดรนเกษตร เป็นต้น ซึ่งในแต่ละหลักสูตรที่ทางศูนย์ฝึกอบรมฯ จัดขึ้น ผู้ที่จบหลักสูตรจะได้รับใบประกาศนียบัตร (Drone Pilot Certificate) เพื่อรับรองความสามารถการเป็นนักบินโดรนในแต่ละหลักสูตร เพื่อใช้ในการอ้างอิงในการประกอบอาชีพการบินในอนาคตได้ 
+            ศูนย์ฝึกอบรมวิชาชีพอากาศยานไร้คนขับ PDRC มีการฝึกอบรมทั้งภาคทฤษฎี, ภาคจำลองเสมือนจริง และภาคอากาศให้เป็นไปตามมาตรฐานสากล International Civil Aviation Organization-ICAO และรับรองถูกต้องตามข้อกำหนดที่สำนักงานการบินพลเรือนแห่งประเทศไทย (กพท.) CAAT (The Civil Aviation Authority of Thailand) กำหนดทุกประการ โดยมุ่งเน้นทักษะความชำนาญ (Skill) ปลูกฝังจิตสำนึก (Attitude) จัดการด้านความปลอดภัย (Safety) บริหารและประเมินความเสี่ยง (Risk) การขออนุญาติการใช้ห้วงอากาศ (Air Space) เป็นต้น มีครูฝึกที่มีความรู้ มีประสบการณ์ด้านการสอน มีความชำนาญ ผ่านการฝึกอบรมทั้งจากในประเทศและต่างๆ ประเทศ ที่พร้อมจะให้ความรู้แก่ศิษย์การบินทุกท่าน จึงมั่นใจได้ว่าในทุกหลักสูตรที่ทางศูนย์ฝึกอบรม PDRC จัดขึ้น มีขั้นตอนการเรียน การสอนที่เป็นไปตามมาตรฐานในระดับประเทศและในระดับสากล 
+        </div>
+        <span class="read-more-btn-2">อ่านเพิ่มเติม</span>
+    </div>
+    <div id="readMoreModal3" class="modal-2">
+        <div class="modal-content3">
+            <span class="close-modal3"><i class="ri-close-large-line"></i></span>
+            <p class="text-overlay-3-full"> สำหรับผู้จบการฝึกอบรมในแต่ละหลักสูตรจะมีทักษะ (Skill) มีความสามารถ (Competency) มีความรู้ (Knowledge) ในระดับพื้นฐาน (Basic) จนถึงระดับสูง (Advance) สามารถทำการบินได้อย่างปลอดภัย (Aviation Safety) มีเข้าใจระบบการบินอากาศยานไร้คนขับในแบบต่างๆ ทั้งแบบปีกหมุน (Multi Rotor) และแบบปีกตรึง (Fixed Wing) สามารถปฏิบัติการบินได้ถูกต้องตามกฎหมาย พระราชบัญญัติการเดินอากาศ พ.ศ.2497 และประกาศกฎเกณฑ์ต่างๆ ที่เกี่ยวข้อง 
+                นอกจากนี้ ผู้จบในแต่ละหลักสูตรสามารถต่อยอดธุรกิจ สร้างมูลค่างาน พัฒนาวิชาชีพ สู่การประกอบอาชีพนักบินโดรนงานด้านต่างๆ อาทิ การเป็นนักบินโดรนภารกิจกู้ภัย ค้นหา นักบินโดรนเพื่อการสำรวจและรังวัด นักบินโดรนจัดทำแผนที่ทางอากาศ 2 มิติ 3 มิติ นักบินโดรนงานตรวจสอบ รวมถึง นักบินโดรนเกษตร เป็นต้น ซึ่งในแต่ละหลักสูตรที่ทางศูนย์ฝึกอบรมฯ จัดขึ้น ผู้ที่จบหลักสูตรจะได้รับใบประกาศนียบัตร (Drone Pilot Certificate) เพื่อรับรองความสามารถการเป็นนักบินโดรนในแต่ละหลักสูตร เพื่อใช้ในการอ้างอิงในการประกอบอาชีพการบินในอนาคตได้ 
+                ศูนย์ฝึกอบรมวิชาชีพอากาศยานไร้คนขับ PDRC มีการฝึกอบรมทั้งภาคทฤษฎี, ภาคจำลองเสมือนจริง และภาคอากาศให้เป็นไปตามมาตรฐานสากล International Civil Aviation Organization-ICAO และรับรองถูกต้องตามข้อกำหนดที่สำนักงานการบินพลเรือนแห่งประเทศไทย (กพท.) CAAT (The Civil Aviation Authority of Thailand) กำหนดทุกประการ โดยมุ่งเน้นทักษะความชำนาญ (Skill) ปลูกฝังจิตสำนึก (Attitude) จัดการด้านความปลอดภัย (Safety) บริหารและประเมินความเสี่ยง (Risk) การขออนุญาติการใช้ห้วงอากาศ (Air Space) เป็นต้น มีครูฝึกที่มีความรู้ มีประสบการณ์ด้านการสอน มีความชำนาญ ผ่านการฝึกอบรมทั้งจากในประเทศและต่างๆ ประเทศ ที่พร้อมจะให้ความรู้แก่ศิษย์การบินทุกท่าน จึงมั่นใจได้ว่าในทุกหลักสูตรที่ทางศูนย์ฝึกอบรม PDRC จัดขึ้น มีขั้นตอนการเรียน การสอนที่เป็นไปตามมาตรฐานในระดับประเทศและในระดับสากล </p>
+        </div>
+    </div>
+    <!--================ MAIN JS=================-->
+    <script src="script.js"></script>
+</body>
+
+</html>
