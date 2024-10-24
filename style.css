@@ -603,7 +603,7 @@ li a:hover {
         width: 160px;
 
     }
-    .open-menu {
+    .open-menu , .close-menu{
         display: block;
     }
     #check:checked ~ .menu {
@@ -634,9 +634,6 @@ li a:hover {
 
     .menu-open {
         right: 0; /* Move the menu to the visible area */
-    }
-    .close-menu {
-        display: none;
     }
     .logo {
         width: 50px;
