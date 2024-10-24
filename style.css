@@ -863,9 +863,42 @@ li a:hover {
         margin-top: 0rem;
     }
     .background__image__2 {
-        margin: 0 30px 50px 30px;
+        margin: 0 50px 50px 50px;
     }
-   
+    .text-overlay-3 {
+        position: absolute;
+        top: 5%;
+        left: 11%;
+        color: black;
+        font-size: 34px;
+        font-weight: 600;
+        text-align: left;
+    }
+    .text-overlay-4 {
+        margin-top: 1rem;
+        position: absolute;
+        top: 16%;
+        left: 11%;
+        color: black;
+        font-size: 14px;
+        font-weight: 300;
+        max-width: 850px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 8;
+        line-clamp: 8;
+        max-height: calc(1.5em * 8); 
+        line-height: 1.5em; 
+    }
+    .read-more-btn-2 {
+        display: block;
+        margin-top: 1rem;
+        position: absolute;
+        top: 68%;
+        left: 11%;
+    }
 }
 @media screen and (max-width: 1150px) {
     .text-overlay-3 {
@@ -899,7 +932,7 @@ li a:hover {
         display: block;
         margin-top: 1rem;
         position: absolute;
-        top: 63%;
+        top: 70%;
         left: 9%;
     }
 }
@@ -1118,6 +1151,13 @@ li a:hover {
     .background__image__2 {
         border-radius: 17px;
     }
+    .read-more-btn-2 {
+        display: block;
+        margin-top: 1rem;
+        position: absolute;
+        top: 60%;
+        left: 9%;
+    }
 }
 @media screen and (max-width: 812px) {
     .button__overlay {
@@ -1251,6 +1291,9 @@ li a:hover {
         top: 65%;
         left: 8%;
 
+    }
+    .background__image__2 {
+        margin: 0 30px 50px 30px;
     }
 }
 @media screen and (max-width: 672px) {

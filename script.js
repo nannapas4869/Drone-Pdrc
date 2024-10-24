@@ -48,7 +48,7 @@ $(document).ready(function () {
     // Close the hamburger menu
     $(document).on("click", ".close-menu", function () {
       $(".menu").removeClass("menu-open");
-      $(".close-menu-2").hide(); // Hide close icon
+      $(".close-menu").hide(); // Hide close icon
       $(".open-menu").show(); // Show hamburger icon
     });
   }
