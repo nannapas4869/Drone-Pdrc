@@ -318,7 +318,123 @@ li a:hover {
         transform: translateX(-50%);
     }
 }
+.teacher__background {
+    width: 100%;
+    height: 100vh;
+    background-color: #1D1B1B;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.teacher__card__big {
+    position: relative;
+    z-index: 100;
+    width: 792px;
+    height: 80vh;
+    border-radius: 24px;
+    overflow: hidden;
+}
+.teacher__card__small__1{
+    position: relative;
+    z-index: 100;
+    width: 258px;
+    height: 80vh;
+    border-radius: 24px;
+    overflow: hidden;
+    padding-top: 3rem;
+}
+.teacher__card__small__1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(101, 14, 20, 1.0), rgba(167, 41, 42, 1.0) 100%);
+    z-index: 1; /* Place gradient overlay above the image */
+}
+.teacher__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the container */
+    object-position: top; /* Align the image to the top */
+    z-index: 1; /* Ensure the image is the base layer */
+}
+.teacher__img__small {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the container */
+    object-position: top; /* Align the image to the top */
+    z-index: 1; /* Ensure the image is the base layer */
+}
+.rect__wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 103;
+    background: linear-gradient(180deg, rgba(102, 102, 102, 0.0), rgba(0, 0, 0, 0.8) 100%);
+}
+.teacher__card__big::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(101, 14, 20, 1.0), rgba(167, 41, 42, 1.0) 100%);
+    z-index: 1; /* Place gradient overlay above the image */
+}
+.teacher__text__name {
+    position: absolute;
+    bottom: 140px;
+    left: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    z-index: 104; /* Ensure text appears above the gradient */
+}
+.teacher__text__desc {
+    position: absolute;
+    bottom: 100px;
+    left: 20px;
+    color: white;
+    font-size: 15px;
+    z-index: 104;
+    font-weight: 300;
+}
+.teacher__text__desc__2 {
+    position: absolute;
+    bottom: 70px;
+    left: 20px;
+    color: white;
+    font-size: 15px;
+    z-index: 104;
+    font-weight: 300;
+}
+.teacher__text__desc__3 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 15px;
+    z-index: 104;
+    font-weight: 300;
+}
 
+#t02 {
+    
+}
 @media screen and (max-width: 1784px) {
     .text-overlay-3 {
         position: absolute;
