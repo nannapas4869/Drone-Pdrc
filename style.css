@@ -18,7 +18,7 @@
     box-sizing: border-box;
     font-family: 'Mitr', sans-serif;
 }
-.container {
+.container{
     max-width: 1600px;
 }
 
@@ -431,10 +431,43 @@ li a:hover {
     z-index: 104;
     font-weight: 300;
 }
-
-#t02 {
-    
+.teacher__small__text__name {
+    position: absolute;
+    bottom: 140px;
+    left: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    z-index: 104; /* Ensure text appears above the gradient */
 }
+.teacher__small__text__desc {
+    position: absolute;
+    bottom: 100px;
+    left: 20px;
+    color: white;
+    font-size: 15px;
+    z-index: 104;
+    font-weight: 300;
+}
+.teacher__small__text__desc__2 {
+    position: absolute;
+    bottom: 70px;
+    left: 20px;
+    color: white;
+    font-size: 15px;
+    z-index: 104;
+    font-weight: 300;
+}
+.teacher__small__text__desc__3 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 15px;
+    z-index: 104;
+    font-weight: 300;
+}
+
 @media screen and (max-width: 1784px) {
     .text-overlay-3 {
         position: absolute;
