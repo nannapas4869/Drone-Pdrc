@@ -141,3 +141,22 @@ subtractIcon_11.addEventListener("click", function() {
     subtractIcon_11.style.display = "none";
     answerBlock_11.style.display = "none";
 });
+
+document.getElementById('globalSearch').addEventListener('input', function() {
+    const searchTerm = this.value.toLowerCase();
+    const questionBlocks = document.querySelectorAll('.question__block');
+
+    questionBlocks.forEach((block) => {
+        const questionText = block.querySelector('.question__text').textContent.toLowerCase();
+        const answerBlock = block.nextElementSibling;
+
+        // Show or hide the question/answer based on the search term
+        if (questionText.includes(searchTerm)) {
+            block.style.display = '';
+            answerBlock.style.display = ''; // Display the answer if necessary
+        } else {
+            block.style.display = 'none';
+            answerBlock.style.display = 'none';
+        }
+    });
+});
