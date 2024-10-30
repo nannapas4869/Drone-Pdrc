@@ -18,8 +18,10 @@
     box-sizing: border-box;
     font-family: 'Mitr', sans-serif;
 }
-.container{
+.container-custom{
     max-width: 1600px;
+    display: block;
+    margin: auto;
 }
 
 .nav-bar{
@@ -536,7 +538,7 @@ li a:hover {
     }
 }
 @media screen and (max-width: 1608px) {
-    .container {
+    .container-custom {
         max-width: 1400px;
     }
     ul li a {
