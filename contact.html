@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/css/contact.css">
     <link rel="stylesheet" href="/css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <title>Drone Project</title>
 </head>
 
@@ -40,24 +41,21 @@
             </nav>
         </header>
     </div>
-    <div class="contact__us__banner">
+    <div>
         <img src="/images/contact_us_banner.png" alt="contact_us_banner" width="100%">
     </div>
     <div class="building__wrapper">
-        <div class="building__2">
-            <img src="/images/PDRC Building_II.png" alt="PDRC_Buiding_2" width="100%" class="building__image">
-        </div>
         <div class="overlay__container">
-            <div class="container__block">
+            <div>
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12 col-md-6 col-lg-4">
                             <div class="d-flex flex-row align-items-center bg__white">
                                 <div class="padding__image">
-                                    <img src="/images/pin_icon.png" alt="pin_icon" width="100%">
+                                    <img src="/images/pin_icon.png" alt="pin_icon" width="100%" class="image__width">
                                 </div>
                                 <div>
-                                    <p>
+                                    <p class="text__box">
                                         พัทยา โดรน แอนด์ โรบอติกส์ เซ็นเตอร์
                                         เลขที่ 362/24 หมู่ 10 ตำบลห้วยใหญ่ อำเภอบางละมุง จังหวัดชลบุรี
                                         รหัสไปรษณีย์ 20150
@@ -68,13 +66,13 @@
                         <div class="col-sm-12 col-md-6 col-lg-4">
                             <div class="d-flex flex-row align-items-center bg__white">
                                 <div class="padding__image">
-                                    <img src="/images/pin_icon.png" alt="pin_icon" width="100%">
+                                    <img src="/images/facebook_icon.png" alt="facebook_icon" width="100%"
+                                        class="image__width">
                                 </div>
                                 <div>
-                                    <p>
-                                        พัทยา โดรน แอนด์ โรบอติกส์ เซ็นเตอร์
-                                        เลขที่ 362/24 หมู่ 10 ตำบลห้วยใหญ่ อำเภอบางละมุง จังหวัดชลบุรี
-                                        รหัสไปรษณีย์ 20150
+                                    <p class="text__box">
+                                        PDRC : Pattaya Drone
+                                        and Robotics Center
                                     </p>
                                 </div>
                             </div>
@@ -82,22 +80,98 @@
                         <div class="col-sm-12 col-md-6 col-lg-4">
                             <div class="d-flex flex-row align-items-center bg__white">
                                 <div class="padding__image">
-                                    <img src="/images/pin_icon.png" alt="pin_icon" width="100%">
+                                    <img src="/images/telnumber_icon.png" alt="telnumber_icon" width="100%"
+                                        class="image__width">
                                 </div>
                                 <div>
-                                    <p>
-                                        พัทยา โดรน แอนด์ โรบอติกส์ เซ็นเตอร์
-                                        เลขที่ 362/24 หมู่ 10 ตำบลห้วยใหญ่ อำเภอบางละมุง จังหวัดชลบุรี
-                                        รหัสไปรษณีย์ 20150
+                                    <p class="text__box">
+                                        +66 64 654 4664
                                     </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div class="d-flex flex-row align-items-center bg__white">
+                                <div class="padding__image">
+                                    <img src="/images/time__icon.png" alt="time__icon" width="100%"
+                                        class="image__width">
+                                </div>
+                                <div>
+                                    <p class="text__box">
+                                        จันทร์ - ศุกร์ เวลา 08:30 - 17:30 น. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div class="d-flex flex-row align-items-center bg__white">
+                                <div class="padding__image">
+                                    <img src="/images/mail_icon.png" alt="mail_icon" width="100%" class="image__width">
+                                </div>
+                                <div>
+                                    <p class="text__box">
+                                        info@systronics.co.th </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div class="d-flex flex-row align-items-center bg__white">
+                                <div class="padding__image">
+                                    <img src="/images/line_icon.png" alt="line_icon" width="100%" class="image__width">
+                                </div>
+                                <div>
+                                    <p class="text__box">
+                                        รอไอดีไลน์จาก PDRC </p>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <div class="input-group input-group-lg custom__input__block">
+                                <input type="text" class="form-control custom__input__text" placeholder="กรอกชื่อ">
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <div class="input-group input-group-lg custom__input__block">
+                                <input type="text" class="form-control custom__input__text" placeholder="E-mail">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <div class="input-group input-group-lg custom__input__block">
+                                <textarea class="form-control custom__input__text" id="exampleFormControlTextarea1" rows="6" placeholder="ข้อความของคุณ"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button type="submit" class="submit__button">SEND EMAIL</button>
                 </div>
             </div>
         </div>
     </div>
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  
+    <script>
+      // Initialize the map
+      const map = L.map('map').setView([12.834254009551909, 100.98152917052228], 8); // Bangkok, Thailand
+  
+      // Mapbox satellite tile layer
+      L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibmFubmFwYXM0ODY5NjAiLCJhIjoiY20yd3V5bjMxMGI1aTJscHNsNjJ5ZXI5aiJ9.h2W5YX9Xy0xacw5JDaQEBw', {
+        maxZoom: 19,
+        attribution: '© Mapbox © OpenStreetMap',
+        tileSize: 512,
+        zoomOffset: -1
+      }).addTo(map);
+  
+      // Marker example
+      L.marker([12.834254009551909, 100.98152917052228]).addTo(map)
+        .bindPopup('PDRC')
+        .openPopup();
+    </script>
     <script src="/js/script.js"></script>
     <script src="/js/contact_us.js"></script>
 </body>
