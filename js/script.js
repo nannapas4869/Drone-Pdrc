@@ -11,6 +11,15 @@ menuLinks.forEach(link => {
     this.classList.add('active');
   });
 });
+const subMenuLinks = document.querySelectorAll('.submenu > li a');
+
+subMenuLinks.forEach(subLink  => {
+  subLink.addEventListener('click', function () {
+    subMenuLinks.forEach(subItem => subItem.classList.remove('active__submenu'));
+
+    this.classList.add('active__submenu');
+  })
+})
 
 $(document).ready(function () {
   // Function to wrap menu items when screen size is less than 1359px

@@ -38,13 +38,56 @@ ul {
     display: flex;
 }
 
-ul li a {
+ul li a, ul {
     display: inline-block;
     text-decoration: none;
     color: black !important;
     transition: 0.15s ease-in-out;
     position: relative;
     font-size: 25px;
+}
+.submenu {
+    display: block; 
+    position: absolute; 
+    background-color: #fff; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+    padding: 1rem 2rem; 
+    margin: 0; 
+    list-style: none; 
+    z-index: 100; 
+}
+
+/* Style each submenu item */
+.submenu li {
+    width: 600px; /* Set a fixed width for the submenu */
+}
+
+/* Style for submenu links */
+.submenu li a {
+    display: inline-block; 
+    padding: 10px 20px; 
+    text-decoration: none; 
+    color: #333; 
+    background-color: #fff; 
+    transition: background-color 0.3s; 
+}
+
+.submenu li a:hover {
+   color: #791118 !important;
+   text-decoration: underline;
+}
+.menu__list {
+    position: relative;
+}
+/* Show the submenu on hover */
+.menu__list:hover .submenu {
+    display: block; /* Show submenu when the parent is hovered */
+    top: 100%; /* Position the submenu directly below the parent */
+    left: 0; /* Align with the parent */
+}
+.active__submenu {
+    color: #791118;
+    text-decoration: underline;
 }
 .login__button {
     padding: 10px 0px;
@@ -468,6 +511,9 @@ li a:hover {
     font-size: 15px;
     z-index: 104;
     font-weight: 300;
+}
+.menu__list:hover {
+    border-bottom: 4px solid #791118;
 }
 
 @media screen and (max-width: 1784px) {
